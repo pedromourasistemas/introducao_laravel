@@ -10,3 +10,5 @@ Curso de Introdução ao Laravel (5.3) pela Udemy. O que está sendo aprendido n
 - Como criar Controllers.
 - Como criar Views.
 - Como criar um crud completo.
+- Seeders
+- Middleware

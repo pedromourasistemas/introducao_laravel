@@ -10,12 +10,12 @@
           <table>
               <thead>
                 <tr>
-                  <th>ID</th>
+                  <th class="center">ID</th>
                   <th>Título</th>
                   <th>Descrição</th>
-                  <th>Imagem</th>
-                  <th>Publicado</th>
-                  <th>Ação</th>
+                  <th class="center">Imagem</th>
+                  <th class="center">Publicado</th>
+                  <th class="center">Ação</th>
                 </tr>
               </thead>
               <tbody>
@@ -25,11 +25,11 @@
                     <td>{{ $registro->id }}</td>
                     <td>{{ $registro->titulo }}</td>
                     <td>{{ $registro->descricao }}</td>
-                    <td><img width="120" src="{{ asset($registro->imagem) }}" alt="{{ $registro->titulo }}"/></td>
-                    <td>{{ $registro->publicado }}</td>
-                    <td>
-                      <a class="btn deep-orange" href="{{ route('admin.cursos.editar',$registro->id) }}">Editar</a>
-                      <a class="btn deep-red" href="{{ route('admin.cursos.deletar',$registro->id) }}">Deletar</a>
+                    <td><img width="60" src="{{ asset($registro->imagem) }}" alt="{{ $registro->titulo }}"/></td>
+                    <td class="center">{{ $registro->publicado }}</td>
+                    <td class="center">
+                      <a class="btn deep-orange" style="width:90px;" href="{{ route('admin.cursos.editar',$registro->id) }}">Editar</a>
+                      <a class="btn deep-red" style="width:90px;" href="{{ route('admin.cursos.deletar',$registro->id) }}">Deletar</a>
                     </td>
                   </tr>
 

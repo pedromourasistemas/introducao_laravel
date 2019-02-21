@@ -18,12 +18,17 @@
                     <p>{{$curso->descricao}}</p>
                   </div>
                   <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="#">Ver mais...</a>
                   </div>
                 </div>
               </div>
           @endforeach
         </div>
+
+        <div class="row" align="center">
+            {{$cursos->links()}}
+        </div>
+
     </div>
 
 @endsection
